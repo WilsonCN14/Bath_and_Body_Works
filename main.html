@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8eab1b87c1.js" crossorigin="anonymous"></script>
+    <title>Fake Bath & Body Works</title>
+</head>
+<body>
+    <header>
+        <!-- Clicking on "Set Store" pops up a window asking for zip code-->
+        <div class="pickUp">
+            <i class="fa-solid fa-location-crosshairs"></i> PICK UP IN STORE 
+            <span class="setStore" id="openPopup">Set Store</span>
+        </div>
+
+        <!-- popupStore is hidden until "Set Store" is clicked -->
+        <div class="popup" id="popupStore">
+            <div class="popupContent">
+                <i class="fa-solid fa-location-crosshairs"></i> PICK UP IN STORE 
+                <p>Set your location. Place your order. We'll have it waiting for you.</p>
+                <p>Use my current location</p>
+                <form>
+                    <label for="zipcode">ZIP Code: </label><br>
+                    <input type="text" id="zipcode" name="zipcode"><br>
+                    <input type="submit" value="Set Store" id="closePopup">
+                </form>
+            </div>
+        </div>
+
+        <!-- Company name-->
+        <h1>Fake Bath & Body Works</h1>
+
+        <!-- Search bar -->
+        <div class="search">Search by fragrance or product... <i class="fa-solid fa-magnifying-glass"></i></div>
+
+        <!-- Profile -->
+        <div class="profile"><i class="fa-regular fa-user"></i></div>
+
+        <!-- Cart -->
+        <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+
+        <!-- Navigate to other pages (fake pages)-->
+        <nav>
+            <ul class="menu">
+                <li>NEW & NOW</li>
+                    <ul>
+                        <li>NEW & NOW</li>
+                            <ul>
+                                <li>New Arrivals</li>
+                                <li>Men's Shop</li>
+                                <li>Laundry Fragrances</li>
+                                <li>Best Sellers</li>
+                                <li>Aromatherapy Shop</li>
+                                <li>Get Inspired</li>
+                                <li>Shop By Fragrance</li>
+                            </ul>
+                        <li>EXPLORE NEW & NOW</li>
+                    </ul>
+                <li>BODY CARE</li>
+                    <ul>
+                        <li>FEATURED</li>
+                            <ul>
+                                <li>New Body Care</li>
+                                <li>Customer Favorites</li>
+                                <li>Retired Fragances</li>
+                                <li>Travel Size</li>
+                            </ul>
+                        <li>BATH & SHOWER</li>
+                            <ul>
+                                <li>All Bath & Shower</li>
+                                <li>Body Wash & Shower Gel</li>
+                                <li>Bubble Bath</li>
+                                <li>Bar Soap</li>
+                                <li>Bath Accessories</li>
+                            </ul>
+                        <li>MOISTURIZERS</li>
+                            <ul>
+                                <li>All Moisturizers</li>
+                                <li>Body Lotion</li>
+                                <li>Body Cream</li>
+                                <li>Hand Cream</li>
+                                <li>Lip Gloss & Balms</li>
+                            </ul>
+                        <li>FRAGRANCE</li>
+                            <ul>
+                                <li>All Fragrance</li>
+                                <li>Body Sprays & Mists</li>
+                                <li>Perfume & Cologne</li>
+                            </ul>
+                        <li>AROMATHERAPY</li>
+                            <ul>
+                                <li>All Aromatherapy</li>
+                                <li>Body Wash & Shower Gel</li>
+                                <li>Moisturizers</li>
+                                <li>Mists & Sprays</li>
+                            </ul>
+                        <li>MEN'S</li>
+                            <ul>
+                                <li>All Men's</li>
+                                <li>Body Wash & Shower Gel</li>
+                                <li>Moisturizers</li>
+                                <li>Body Spray & Cologne</li>
+                            </ul>
+                        <li>GIFT SETS</li>
+                            <ul>
+                                <li>Body Care Gift Sets</li>
+                            </ul>
+                        <li>EXPLORE BODY CARE</li>
+                        <li>BODY CARE OFFERS</li>
+                            <ul>
+                                <li>Buy 3, Get 3 Free All Full-Size Body Care</li>
+                                <li>Buy 2, Get 1 Free Travel, Hand & Lip Care</li>
+                            </ul>
+                    </ul>
+                <li>HAND SOAPS & SANITIZERS</li>
+                    <ul>
+                        <li>FEATURED</li>
+                            <ul>
+                                <li>New Hand Soaps & Sanitizers</li>
+                                <li>Gentle & Clean Hand Soaps</li>
+                            </ul>
+                        <li>HAND SOAPS</li>
+                            <ul>
+                                <li>All Hand Soaps</li>
+                                <li>Foaming Soaps</li>
+                                <li>Gel & Nourishing Soaps</li>
+                                <li>Soap Holders</li>
+                            </ul>
+                        <li>HAND SANITIZERS</li>
+                            <ul>
+                                <li>All Hand Sanitizers</li>
+                                <li>PocketBac Hand Sanitizers</li>
+                                <li>Hand Sanitizer Sprays</li>
+                                <li>Full-Size Sanitizers</li>
+                                <li>Sanitizer Wipes</li>
+                                <li>Hand Sanitizer Holders</li>
+                            </ul>
+                        <li>GIFT SETS</li>
+                            <ul>
+                                <li>Hand Soap & Sanitizer Gift Sets</li>
+                            </ul>
+                        <li>EXPLORE HAND SOAPS & SANITIZERS</li>
+                        <li>HAND SOAPS & SANITIZERS OFFERS</li>
+                            <ul>
+                                <li>6/$27 or 4/$20 Hand Soaps</li>
+                                <li>$8 Hand Sanitizer 5-Packs</li>
+                                <li>3/$15 Hand Sanitizer Sprays</li>
+                            </ul>
+                    </ul>
+                <li>HOME FRAGRANCE</li>
+                    <ul>
+                        <li>FEATURED</li>
+                            <ul>
+                                <li>New Home Fragrance</li>
+                                <li>The White Barn Shop</li>
+                                <li>Auto Refresh Wallflowers</li>
+                            </ul>
+                        <li>CANDLES</li>
+                            <ul>
+                                <li>All Candles</li>
+                                <li>3-Wick Candles</li>
+                                <li>Single Wick Candles</li>
+                                <li>Candle Holders & Accessories</li>
+                            </ul>
+                        <li>AIR FRESHENERS</li>
+                            <ul>
+                                <li>All Wallflowers</li>
+                                <li>Wallflowers Plugs</li>
+                                <li>Wallflowers Refills</li>
+                                <li>Room Sprays & Mists</li>
+                                <li>Car Fragrance</li>
+                            </ul>
+                        <li>EXPLORE HOME FRAGRANCE</li>
+                        <li>HOME FRAGRANCE OFFERS</li>
+                            <ul>
+                                <li>$2.95 All Wallflowers Single Fragrance Refills</li>
+                                <li>2/$22 Single Wick Candles</li>
+                                <li>3/$22 Room Sprays</li>
+                                <li>3/$10 Car Fragrance Refills</li>
+                            </ul>
+                    </ul>
+                <li>GIFTS</li>
+                    <ul>
+                        <li>FEATURED</li>
+                            <ul>
+                                <li>Mother's Day Gifts</li>
+                                <li>Easter Gifts</li>
+                                <li>Gift Sets</li>
+                            </ul>
+                        <li>GIFTS BY PRICE</li>
+                            <ul>
+                                <li>$15 & Under Gifts</li>
+                                <li>$30 & Under Gifts</li>
+                                <li>$50 & Under Gifts</li>
+                            </ul>
+                        <li>GIFTS BY RECIPIENT</li>
+                            <ul>
+                                <li>Gifts For Her</li>
+                                <li>Gifts For Him</li>
+                                <li>Gifts For Everyone</li>
+                                <li>Gifts For The Hostess</li>
+                            </ul>
+                        <li>COLLECTIONS</li>
+                            <ul>
+                                <li>Gift Boxes & Bags</li>
+                                <li>Accessories</li>
+                            </ul>
+                        <li>GIFT CARDS</li>
+                            <ul>
+                                <li>E-Gift Cards</li>
+                                <li>Gift Cards</li>
+                            </ul>
+                        <li>EXPLORE GIFTS</li>
+                    </ul>
+                <li>TOP OFFERS</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Shopping PSA -->
+    <div class="psa">Shipping PSA: order your gifts soon to fill their basket by Easter morning (April 17)</div>
+
+    <!-- Main pic and shop button -->
+    <div>
+        <img src="images/four_candles.jpg" atl="Four candles in a row"> 
+        <button>Shop Candles</button>
+    </div>
+
+    <!-- Today's Top Offers -->
+
+    <!-- Large pic and shop button -->
+
+    <!-- Shop by Category -->
+
+    <!-- New Product -->
+
+    <!-- Four products in square -->
+
+    <!-- Easter gifts -->
+
+    <!-- More good things, this way -->
+
+    <!-- Instagram -->
+
+    <!-- Bottom navigation -->
+
+    <!-- Footer -->
+
+    <script src="main.js"></script>
+
+</body>
+</html>
